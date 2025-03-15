@@ -25,7 +25,7 @@ DB_URL = os.environ.get("DB_URL", "")
  
 FLOOD = int(os.environ.get("FLOOD", "10"))
 
-START_PIC = os.environ.get("START_PIC", "https://graph.org/file/336107a157be4f5493da9-f68ce48efdfaf0fc2d.jpg")
+START_PIC = os.environ.get("START_PIC", "https://graph.org/file/a09adf900b5495b78d8da-121e4270409a71754c.jpg")
 
 ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '7859455116 1881115556').split()]
 
