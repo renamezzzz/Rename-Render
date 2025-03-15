@@ -1,6 +1,4 @@
-# Don't Remove Credit @VJ_Botz
-# Subscribe YouTube Channel For Amazing Bot @Tech_VJ
-# Ask Doubt on telegram @KingVJ01
+
 
 from asyncio import sleep
 from pyrogram import Client, filters
@@ -18,19 +16,19 @@ async def start(client, message):
     user = message.from_user
     if not await db.is_user_exist(user.id):
         await db.add_user(user.id)             
-    txt=f"👋 Hello Developer {user.mention} \n\nI am an Advance file Renamer and file Converter BOT with Custom thumbnail support.\n\nSend me any video or document !"
+    txt=f"👋 Hello {user.mention} \n\nI am an Advance file Renamer and file Converter BOT with Custom thumbnail support.\n\nSend me any video or document !"
     button=InlineKeyboardMarkup([[
-        InlineKeyboardButton(" Developer ", url='https://t.me/iet_owner')
+        InlineKeyboardButton("👨‍💻 Dᴇᴠᴇʟᴏᴘᴇʀ 🛠️", url='https://t.me/iet_owner')
         ],[
-        InlineKeyboardButton(' Updates', url='https://t.me/iqbaleditzzz'),
-        InlineKeyboardButton(' Support', url='https://t.me/iqbaleditz')
+        InlineKeyboardButton('⏳ 𝑼𝒑𝒅𝒂𝒕𝒆𝒔', url='https://t.me/iqbaleditzzz'),
+        InlineKeyboardButton('𝑺𝒖𝒑𝒑𝒐𝒓𝒕 🧰', url='https://t.me/iqbaleditz')
         ],[
-        InlineKeyboardButton(' About', callback_data='about'),
-        InlineKeyboardButton(' Help', callback_data='help')
+        InlineKeyboardButton('⚙️ 𝑨𝒃𝒐𝒖𝒕', callback_data='about'),
+        InlineKeyboardButton('𝑯𝒆𝒍𝒑 ⚠️', callback_data='help')
         ],[
-        InlineKeyboardButton(" Join Our Movie Channel !", url='https://t.me/mm_moviess')
+        InlineKeyboardButton("🎥 𝑴𝒐𝒗𝒊𝒆𝒔 🎥", url='https://t.me/mm_moviess')
         ],[
-        InlineKeyboardButton("❤️ Subscribe YT ❤️", url='https://www.youtube.com/@iqbaleditzzz')
+        InlineKeyboardButton("❤️ 𝑻𝒖𝒕𝒐𝒓𝒊𝒂𝒍𝒔 ❤️", url='https://www.youtube.com/@iqbaleditzzz')
         ]
         ])
     if START_PIC:
@@ -54,15 +52,15 @@ async def rename_start(client, message):
     fileid = file.file_id
     try:
         text = f"""**__What do you want me to do with this file.?__**\n\n**File Name** :- `{filename}`\n\n**File Size** :- `{filesize}`"""
-        buttons = [[ InlineKeyboardButton("📝 𝚂𝚃𝙰𝚁𝚃 𝚁𝙴𝙽𝙰𝙼𝙴 📝", callback_data="rename") ],
-                   [ InlineKeyboardButton("✖️ 𝙲𝙰𝙽𝙲𝙴𝙻 ✖️", callback_data="cancel") ]]
+        buttons = [[ InlineKeyboardButton("📝 Sᴛᴀʀᴛ Rᴇɴᴀᴍᴇ 📝", callback_data="rename") ],
+                   [ InlineKeyboardButton("✖️ Cᴀɴᴄᴇʟ ✖️", callback_data="cancel") ]]
         await message.reply_text(text=text, reply_to_message_id=message.id, reply_markup=InlineKeyboardMarkup(buttons))
         await sleep(FLOOD)
     except FloodWait as e:
         await sleep(e.value)
         text = f"""**__What do you want me to do with this file.?__**\n\n**File Name** :- `{filename}`\n\n**File Size** :- `{filesize}`"""
-        buttons = [[ InlineKeyboardButton("📝 𝚂𝚃𝙰𝚁𝚃 𝚁𝙴𝙽𝙰𝙼𝙴 📝", callback_data="rename") ],
-                   [ InlineKeyboardButton("✖️ 𝙲𝙰𝙽𝙲𝙴𝙻 ✖️", callback_data="cancel") ]]
+        buttons = [[ InlineKeyboardButton("📝 Sᴛᴀʀᴛ Rᴇɴᴀᴍᴇ 📝", callback_data="rename") ],
+                   [ InlineKeyboardButton("✖️ Cᴀɴᴄᴇʟ ✖️", callback_data="cancel") ]]
         await message.reply_text(text=text, reply_to_message_id=message.id, reply_markup=InlineKeyboardMarkup(buttons))
     except:
         pass
@@ -72,19 +70,19 @@ async def cb_handler(client, query: CallbackQuery):
     data = query.data 
     if data == "start":
         await query.message.edit_text(
-            text=f"""👋 Hello Developer {query.from_user.mention} \n\nI am an Advance file Renamer and file Converter BOT with permanent and custom thumbnail support.\n\nSend me any video or document !""",
+            text=f"""👋 Hello {query.from_user.mention} \n\nI am an Advance file Renamer and file Converter BOT with permanent and custom thumbnail support.\n\nSend me any video or document !""",
             reply_markup=InlineKeyboardMarkup( [[
-        InlineKeyboardButton(" Developer ", url='https://t.me/iet_owner')
+        InlineKeyboardButton("👨‍💻 Dᴇᴠᴇʟᴏᴘᴇʀ 🛠️", url='https://t.me/iet_owner')
         ],[
-        InlineKeyboardButton(' Updates', url='https://t.me/iqbaleditzzz'),
-        InlineKeyboardButton(' Support', url='https://t.me/iqbaleditz')
+        InlineKeyboardButton('⏳ 𝑼𝒑𝒅𝒂𝒕𝒆𝒔', url='https://t.me/iqbaleditzzz'),
+        InlineKeyboardButton('𝑺𝒖𝒑𝒑𝒐𝒓𝒕 🧰', url='https://t.me/iqbaleditz')
         ],[
-        InlineKeyboardButton(' About', callback_data='about'),
-        InlineKeyboardButton(' Help', callback_data='help')
+        InlineKeyboardButton('⚙️ 𝑨𝒃𝒐𝒖𝒕', callback_data='about'),
+        InlineKeyboardButton('𝑯𝒆𝒍𝒑 ⚠️', callback_data='help')
         ],[
-        InlineKeyboardButton(" Join Our Movie Channel !", url='https://t.me/mm_moviess')
+        InlineKeyboardButton("🎥 𝑴𝒐𝒗𝒊𝒆𝒔 🎥", url='https://t.me/mm_moviess')
         ],[
-        InlineKeyboardButton("❤️ Subscribe YT ❤️", url='https://www.youtube.com/@iqbaleditzzz')
+        InlineKeyboardButton("❤️ 𝑻𝒖𝒕𝒐𝒓𝒊𝒂𝒍𝒔 ❤️", url='https://www.youtube.com/@iqbaleditzzz')
         ]
         ]
                 )
@@ -93,10 +91,10 @@ async def cb_handler(client, query: CallbackQuery):
         await query.message.edit_text(
             text=mr.HELP_TXT,
             reply_markup=InlineKeyboardMarkup( [[
-               InlineKeyboardButton(" Join our Movie Channel ", url="https://t.me/mm_moviess")
+               InlineKeyboardButton("🎥 Jᴏɪɴ Oᴜʀ Mᴏᴠɪᴇ Cʜᴀɴɴᴇʟ 🎥", url="https://t.me/mm_moviess")
                ],[
-               InlineKeyboardButton(" 𝙲𝙻𝙾𝚂𝙴", callback_data = "close"),
-               InlineKeyboardButton(" 𝙱𝙰𝙲𝙺", callback_data = "start")
+               InlineKeyboardButton("❌ Cʟᴏsᴇ", callback_data = "close"),
+               InlineKeyboardButton("Bᴀᴄᴋ 🔙", callback_data = "start")
                ]]
             )
         )
@@ -105,10 +103,10 @@ async def cb_handler(client, query: CallbackQuery):
             text=mr.ABOUT_TXT.format(client.mention),
             disable_web_page_preview = True,
             reply_markup=InlineKeyboardMarkup( [[
-                InlineKeyboardButton(" Join our Movie Channel ", url="https://t.me/mm_moviess")
+                InlineKeyboardButton("🎥 Jᴏɪɴ Oᴜʀ Mᴏᴠɪᴇ Cʜᴀɴɴᴇʟ 🎥", url="https://t.me/mm_moviess")
                ],[
-               InlineKeyboardButton(" 𝙲𝙻𝙾𝚂𝙴", callback_data = "close"),
-               InlineKeyboardButton(" 𝙱𝙰𝙲𝙺", callback_data = "start")
+               InlineKeyboardButton("❌ Cʟᴏsᴇ", callback_data = "close"),
+               InlineKeyboardButton("Bᴀᴄᴋ 🔙", callback_data = "start")
                ]]
             )
         )
@@ -116,10 +114,10 @@ async def cb_handler(client, query: CallbackQuery):
         await query.message.edit_text(
             text=mr.DEV_TXT,
             reply_markup=InlineKeyboardMarkup( [[
-                InlineKeyboardButton(" Join our Movie Channel ", url="https://t.me/mm_moviess")
+                InlineKeyboardButton("🎥 Jᴏɪɴ Oᴜʀ Mᴏᴠɪᴇ Cʜᴀɴɴᴇʟ 🎥", url="https://t.me/mm_moviess")
                ],[
-               InlineKeyboardButton(" 𝙲𝙻𝙾𝚂𝙴", callback_data = "close"),
-               InlineKeyboardButton(" 𝙱𝙰𝙲𝙺", callback_data = "start")
+               InlineKeyboardButton("❌ Cʟᴏsᴇ", callback_data = "close"),
+               InlineKeyboardButton("Bᴀᴄᴋ 🔙", callback_data = "start")
                ]]
             )
         )
