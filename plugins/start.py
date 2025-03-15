@@ -26,8 +26,6 @@ async def start(client, message):
         InlineKeyboardButton('⚙️ 𝑨𝒃𝒐𝒖𝒕', callback_data='about'),
         InlineKeyboardButton('𝑯𝒆𝒍𝒑 ⚠️', callback_data='help')
         ],[
-        InlineKeyboardButton("🎥 𝑴𝒐𝒗𝒊𝒆𝒔 🎥", url='https://t.me/mm_moviess')
-        ],[
         InlineKeyboardButton("❤️ 𝑻𝒖𝒕𝒐𝒓𝒊𝒂𝒍𝒔 ❤️", url='https://www.youtube.com/@iqbaleditzzz')
         ]
         ])
@@ -79,8 +77,6 @@ async def cb_handler(client, query: CallbackQuery):
         ],[
         InlineKeyboardButton('⚙️ 𝑨𝒃𝒐𝒖𝒕', callback_data='about'),
         InlineKeyboardButton('𝑯𝒆𝒍𝒑 ⚠️', callback_data='help')
-        ],[
-        InlineKeyboardButton("🎥 𝑴𝒐𝒗𝒊𝒆𝒔 🎥", url='https://t.me/mm_moviess')
         ],[
         InlineKeyboardButton("❤️ 𝑻𝒖𝒕𝒐𝒓𝒊𝒂𝒍𝒔 ❤️", url='https://www.youtube.com/@iqbaleditzzz')
         ]
